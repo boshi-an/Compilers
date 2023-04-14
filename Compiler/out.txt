@@ -1,0 +1,21 @@
+run test in "-koopa" mode
+working directory: /root/wd
+make: Entering directory '/root/compiler'
+mkdir -p /root/wd/
+flex  -o /root/wd/sysy.lex.cpp /root/compiler/src/sysy.l
+mkdir -p /root/wd/
+bison -d -o /root/wd/sysy.tab.cpp /root/compiler/src/sysy.y
+mkdir -p /root/wd/
+clang++ -I/root/compiler/src -I/root/wd -MMD -MP -Wall -Wno-register -std=c++17 -O2 -I/opt/include -c /root/wd/sysy.lex.cpp -o /root/wd/sysy.lex.cpp.o
+mkdir -p /root/wd/
+clang++ -I/root/compiler/src -I/root/wd -MMD -MP -Wall -Wno-register -std=c++17 -O2 -I/opt/include -c /root/wd/sysy.tab.cpp -o /root/wd/sysy.tab.cpp.o
+clang++ /root/wd/sysy.lex.cpp.o /root/wd/sysy.tab.cpp.o /root/wd/main.cpp.o /root/wd/helpers.cpp.o  -L/opt/lib/native -lkoopa -lpthread -ldl -o /root/wd/compiler
+make: Leaving directory '/root/compiler'
+running test "0_main" ... [0;32mPASSED[0m
+running test "1_comments" ... [0;32mPASSED[0m
+running test "2_int_dec" ... [0;32mPASSED[0m
+running test "3_int_oct" ... [0;32mPASSED[0m
+running test "4_int_hex" ... [0;32mPASSED[0m
+running test "5_compact" ... [0;32mPASSED[0m
+running test "6_whitespaces" ... [0;32mPASSED[0m
+[0;32mPASSED[0m (7/7)
