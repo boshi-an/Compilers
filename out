@@ -1,0 +1,7 @@
+make: Entering directory '/root/compiler'
+mkdir -p /tmp/tmpfmggivju/
+flex  -o /tmp/tmpfmggivju/sysy.lex.cpp /root/compiler/src/sysy.l
+mkdir -p /tmp/tmpfmggivju/
+bison -d -o /tmp/tmpfmggivju/sysy.tab.cpp /root/compiler/src/sysy.y
+mkdir -p /tmp/tmpfmggivju/
+clang++ -I/root/compiler/src -I/tmp/tmpfmggivju -MMD -MP -Wall -Wno-register -std=c++17 -O2 -I/opt/include -c /tmp/tmpfmggivju/sysy.lex.cpp -o /tmp/tmpfmggivju/sysy.lex.cpp.o

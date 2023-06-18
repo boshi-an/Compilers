@@ -1,0 +1,71 @@
+decl @getint(): i32
+decl @getch(): i32
+decl @getarray(*i32): i32
+decl @putint(i32)
+decl @putch(i32)
+decl @putarray(i32, *i32)
+decl @starttime()
+decl @stoptime()
+
+fun  @main(): i32 {
+%entry: 
+    @_2_0_0i = alloc i32
+    %1 = add 0, 0
+    store %1, @_2_0_0i
+
+    %2 = add 0, 0
+    store %2, @_2_0_0i
+
+    @_2_0_0sum = alloc i32
+    %3 = add 0, 0
+    store %3, @_2_0_0sum
+
+    %4 = add 0, 0
+    store %4, @_2_0_0sum
+
+    jump %while_entry_5
+
+%while_entry_5:
+    %6 = load @_2_0_0i
+    %7 = add 0, 100
+    %8 = lt %6, %7
+    br %8, %while_body_5, %while_end_5
+
+%while_body_5:
+        %9 = load @_2_0_0i
+        %10 = add 0, 50
+        %11 = eq %9, %10
+        br %11, %then_0, %else_0
+
+%then_0:
+            %12 = load @_2_0_0i
+            %13 = add 0, 1
+            %14 = add %12, %13
+            store %14, @_2_0_0i
+
+            jump %while_entry_5
+
+
+%else_0:
+        jump %end_0
+
+%end_0:
+
+        %15 = load @_2_0_0sum
+        %16 = load @_2_0_0i
+        %17 = add %15, %16
+        store %17, @_2_0_0sum
+
+        %18 = load @_2_0_0i
+        %19 = add 0, 1
+        %20 = add %18, %19
+        store %20, @_2_0_0i
+
+    jump %while_entry_5
+
+%while_end_5:
+
+    %21 = load @_2_0_0sum
+    ret %21
+
+}

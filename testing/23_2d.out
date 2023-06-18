@@ -1,0 +1,672 @@
+decl @getint(): i32
+decl @getch(): i32
+decl @getarray(*i32): i32
+decl @putint(i32)
+decl @putch(i32)
+decl @putarray(i32, *i32)
+decl @starttime()
+decl @stoptime()
+
+fun  @main(): i32 {
+%entry: 
+    @_2_0_0a = alloc [[i32, 3], 5]
+
+    %1 = add 0, 0
+    %2 = add 0, 0
+    %3 = add 0, 0
+    %4 = add 0, 0
+    %5 = add 0, 0
+    %6 = add 0, 0
+    %7 = add 0, 0
+    %8 = add 0, 0
+    %9 = add 0, 0
+    %10 = add 0, 0
+    %11 = add 0, 0
+    %12 = add 0, 0
+    %13 = add 0, 0
+    %14 = add 0, 0
+    %15 = add 0, 0
+    @_2_0_0b = alloc [[i32, 3], 5]
+    %16 = add 0, 0
+    %17 = add 0, 0
+    %18 = getelemptr @_2_0_0b, %16
+    %19 = getelemptr %18, %17
+    store %1, %19
+    %20 = add 0, 1
+    %21 = add 0, 1
+    %22 = getelemptr @_2_0_0b, %20
+    %23 = getelemptr %22, %21
+    store %2, %23
+    %24 = add 0, 2
+    %25 = add 0, 2
+    %26 = getelemptr @_2_0_0b, %24
+    %27 = getelemptr %26, %25
+    store %3, %27
+    %28 = add 0, 3
+    %29 = add 0, 0
+    %30 = getelemptr @_2_0_0b, %28
+    %31 = getelemptr %30, %29
+    store %4, %31
+    %32 = add 0, 4
+    %33 = add 0, 1
+    %34 = getelemptr @_2_0_0b, %32
+    %35 = getelemptr %34, %33
+    store %5, %35
+    %36 = add 0, 0
+    %37 = add 0, 2
+    %38 = getelemptr @_2_0_0b, %36
+    %39 = getelemptr %38, %37
+    store %6, %39
+    %40 = add 0, 1
+    %41 = add 0, 0
+    %42 = getelemptr @_2_0_0b, %40
+    %43 = getelemptr %42, %41
+    store %7, %43
+    %44 = add 0, 2
+    %45 = add 0, 1
+    %46 = getelemptr @_2_0_0b, %44
+    %47 = getelemptr %46, %45
+    store %8, %47
+    %48 = add 0, 3
+    %49 = add 0, 2
+    %50 = getelemptr @_2_0_0b, %48
+    %51 = getelemptr %50, %49
+    store %9, %51
+    %52 = add 0, 4
+    %53 = add 0, 0
+    %54 = getelemptr @_2_0_0b, %52
+    %55 = getelemptr %54, %53
+    store %10, %55
+    %56 = add 0, 0
+    %57 = add 0, 1
+    %58 = getelemptr @_2_0_0b, %56
+    %59 = getelemptr %58, %57
+    store %11, %59
+    %60 = add 0, 1
+    %61 = add 0, 2
+    %62 = getelemptr @_2_0_0b, %60
+    %63 = getelemptr %62, %61
+    store %12, %63
+    %64 = add 0, 2
+    %65 = add 0, 0
+    %66 = getelemptr @_2_0_0b, %64
+    %67 = getelemptr %66, %65
+    store %13, %67
+    %68 = add 0, 3
+    %69 = add 0, 1
+    %70 = getelemptr @_2_0_0b, %68
+    %71 = getelemptr %70, %69
+    store %14, %71
+    %72 = add 0, 4
+    %73 = add 0, 2
+    %74 = getelemptr @_2_0_0b, %72
+    %75 = getelemptr %74, %73
+    store %15, %75
+
+    %76 = add 0, 1
+    %77 = add 0, 2
+    %78 = add 0, 3
+    %79 = add 0, 4
+    %80 = add 0, 5
+    %81 = add 0, 6
+    %82 = add 0, 7
+    %83 = add 0, 8
+    %84 = add 0, 9
+    %85 = add 0, 10
+    %86 = add 0, 11
+    %87 = add 0, 12
+    %88 = add 0, 13
+    %89 = add 0, 14
+    %90 = add 0, 15
+    @_2_0_0c = alloc [[i32, 3], 5]
+    %91 = add 0, 0
+    %92 = add 0, 0
+    %93 = getelemptr @_2_0_0c, %91
+    %94 = getelemptr %93, %92
+    store %76, %94
+    %95 = add 0, 1
+    %96 = add 0, 1
+    %97 = getelemptr @_2_0_0c, %95
+    %98 = getelemptr %97, %96
+    store %77, %98
+    %99 = add 0, 2
+    %100 = add 0, 2
+    %101 = getelemptr @_2_0_0c, %99
+    %102 = getelemptr %101, %100
+    store %78, %102
+    %103 = add 0, 3
+    %104 = add 0, 0
+    %105 = getelemptr @_2_0_0c, %103
+    %106 = getelemptr %105, %104
+    store %79, %106
+    %107 = add 0, 4
+    %108 = add 0, 1
+    %109 = getelemptr @_2_0_0c, %107
+    %110 = getelemptr %109, %108
+    store %80, %110
+    %111 = add 0, 0
+    %112 = add 0, 2
+    %113 = getelemptr @_2_0_0c, %111
+    %114 = getelemptr %113, %112
+    store %81, %114
+    %115 = add 0, 1
+    %116 = add 0, 0
+    %117 = getelemptr @_2_0_0c, %115
+    %118 = getelemptr %117, %116
+    store %82, %118
+    %119 = add 0, 2
+    %120 = add 0, 1
+    %121 = getelemptr @_2_0_0c, %119
+    %122 = getelemptr %121, %120
+    store %83, %122
+    %123 = add 0, 3
+    %124 = add 0, 2
+    %125 = getelemptr @_2_0_0c, %123
+    %126 = getelemptr %125, %124
+    store %84, %126
+    %127 = add 0, 4
+    %128 = add 0, 0
+    %129 = getelemptr @_2_0_0c, %127
+    %130 = getelemptr %129, %128
+    store %85, %130
+    %131 = add 0, 0
+    %132 = add 0, 1
+    %133 = getelemptr @_2_0_0c, %131
+    %134 = getelemptr %133, %132
+    store %86, %134
+    %135 = add 0, 1
+    %136 = add 0, 2
+    %137 = getelemptr @_2_0_0c, %135
+    %138 = getelemptr %137, %136
+    store %87, %138
+    %139 = add 0, 2
+    %140 = add 0, 0
+    %141 = getelemptr @_2_0_0c, %139
+    %142 = getelemptr %141, %140
+    store %88, %142
+    %143 = add 0, 3
+    %144 = add 0, 1
+    %145 = getelemptr @_2_0_0c, %143
+    %146 = getelemptr %145, %144
+    store %89, %146
+    %147 = add 0, 4
+    %148 = add 0, 2
+    %149 = getelemptr @_2_0_0c, %147
+    %150 = getelemptr %149, %148
+    store %90, %150
+
+    %151 = add 0, 1
+    %152 = add 0, 2
+    %153 = add 0, 3
+    %154 = add 0, 4
+    %155 = add 0, 5
+    %156 = add 0, 6
+    %157 = add 0, 7
+    %158 = add 0, 8
+    %159 = add 0, 9
+    %160 = add 0, 10
+    %161 = add 0, 11
+    %162 = add 0, 12
+    %163 = add 0, 13
+    %164 = add 0, 14
+    %165 = add 0, 15
+    @_2_0_0d = alloc [[i32, 3], 5]
+    %166 = add 0, 0
+    %167 = add 0, 0
+    %168 = getelemptr @_2_0_0d, %166
+    %169 = getelemptr %168, %167
+    store %151, %169
+    %170 = add 0, 1
+    %171 = add 0, 1
+    %172 = getelemptr @_2_0_0d, %170
+    %173 = getelemptr %172, %171
+    store %152, %173
+    %174 = add 0, 2
+    %175 = add 0, 2
+    %176 = getelemptr @_2_0_0d, %174
+    %177 = getelemptr %176, %175
+    store %153, %177
+    %178 = add 0, 3
+    %179 = add 0, 0
+    %180 = getelemptr @_2_0_0d, %178
+    %181 = getelemptr %180, %179
+    store %154, %181
+    %182 = add 0, 4
+    %183 = add 0, 1
+    %184 = getelemptr @_2_0_0d, %182
+    %185 = getelemptr %184, %183
+    store %155, %185
+    %186 = add 0, 0
+    %187 = add 0, 2
+    %188 = getelemptr @_2_0_0d, %186
+    %189 = getelemptr %188, %187
+    store %156, %189
+    %190 = add 0, 1
+    %191 = add 0, 0
+    %192 = getelemptr @_2_0_0d, %190
+    %193 = getelemptr %192, %191
+    store %157, %193
+    %194 = add 0, 2
+    %195 = add 0, 1
+    %196 = getelemptr @_2_0_0d, %194
+    %197 = getelemptr %196, %195
+    store %158, %197
+    %198 = add 0, 3
+    %199 = add 0, 2
+    %200 = getelemptr @_2_0_0d, %198
+    %201 = getelemptr %200, %199
+    store %159, %201
+    %202 = add 0, 4
+    %203 = add 0, 0
+    %204 = getelemptr @_2_0_0d, %202
+    %205 = getelemptr %204, %203
+    store %160, %205
+    %206 = add 0, 0
+    %207 = add 0, 1
+    %208 = getelemptr @_2_0_0d, %206
+    %209 = getelemptr %208, %207
+    store %161, %209
+    %210 = add 0, 1
+    %211 = add 0, 2
+    %212 = getelemptr @_2_0_0d, %210
+    %213 = getelemptr %212, %211
+    store %162, %213
+    %214 = add 0, 2
+    %215 = add 0, 0
+    %216 = getelemptr @_2_0_0d, %214
+    %217 = getelemptr %216, %215
+    store %163, %217
+    %218 = add 0, 3
+    %219 = add 0, 1
+    %220 = getelemptr @_2_0_0d, %218
+    %221 = getelemptr %220, %219
+    store %164, %221
+    %222 = add 0, 4
+    %223 = add 0, 2
+    %224 = getelemptr @_2_0_0d, %222
+    %225 = getelemptr %224, %223
+    store %165, %225
+    %226 = add 0, 1
+    %227 = add 0, 2
+    %228 = add 0, 3
+    %229 = add 0, 4
+    %230 = add 0, 5
+    %231 = add 0, 6
+    %232 = add 0, 7
+    %233 = add 0, 8
+    %234 = add 0, 9
+    %235 = add 0, 10
+    %236 = add 0, 11
+    %237 = add 0, 12
+    %238 = add 0, 13
+    %239 = add 0, 14
+    %240 = add 0, 15
+    @_2_0_0e = alloc [[i32, 3], 5]
+    %241 = add 0, 0
+    %242 = add 0, 0
+    %243 = getelemptr @_2_0_0e, %241
+    %244 = getelemptr %243, %242
+    store %226, %244
+    %245 = add 0, 1
+    %246 = add 0, 1
+    %247 = getelemptr @_2_0_0e, %245
+    %248 = getelemptr %247, %246
+    store %227, %248
+    %249 = add 0, 2
+    %250 = add 0, 2
+    %251 = getelemptr @_2_0_0e, %249
+    %252 = getelemptr %251, %250
+    store %228, %252
+    %253 = add 0, 3
+    %254 = add 0, 0
+    %255 = getelemptr @_2_0_0e, %253
+    %256 = getelemptr %255, %254
+    store %229, %256
+    %257 = add 0, 4
+    %258 = add 0, 1
+    %259 = getelemptr @_2_0_0e, %257
+    %260 = getelemptr %259, %258
+    store %230, %260
+    %261 = add 0, 0
+    %262 = add 0, 2
+    %263 = getelemptr @_2_0_0e, %261
+    %264 = getelemptr %263, %262
+    store %231, %264
+    %265 = add 0, 1
+    %266 = add 0, 0
+    %267 = getelemptr @_2_0_0e, %265
+    %268 = getelemptr %267, %266
+    store %232, %268
+    %269 = add 0, 2
+    %270 = add 0, 1
+    %271 = getelemptr @_2_0_0e, %269
+    %272 = getelemptr %271, %270
+    store %233, %272
+    %273 = add 0, 3
+    %274 = add 0, 2
+    %275 = getelemptr @_2_0_0e, %273
+    %276 = getelemptr %275, %274
+    store %234, %276
+    %277 = add 0, 4
+    %278 = add 0, 0
+    %279 = getelemptr @_2_0_0e, %277
+    %280 = getelemptr %279, %278
+    store %235, %280
+    %281 = add 0, 0
+    %282 = add 0, 1
+    %283 = getelemptr @_2_0_0e, %281
+    %284 = getelemptr %283, %282
+    store %236, %284
+    %285 = add 0, 1
+    %286 = add 0, 2
+    %287 = getelemptr @_2_0_0e, %285
+    %288 = getelemptr %287, %286
+    store %237, %288
+    %289 = add 0, 2
+    %290 = add 0, 0
+    %291 = getelemptr @_2_0_0e, %289
+    %292 = getelemptr %291, %290
+    store %238, %292
+    %293 = add 0, 3
+    %294 = add 0, 1
+    %295 = getelemptr @_2_0_0e, %293
+    %296 = getelemptr %295, %294
+    store %239, %296
+    %297 = add 0, 4
+    %298 = add 0, 2
+    %299 = getelemptr @_2_0_0e, %297
+    %300 = getelemptr %299, %298
+    store %240, %300
+
+    @_2_0_0f = alloc [i32, 5]
+    %301 = add 0, 1
+    %302 = add 0, 2
+    %303 = add 0, 3
+    %304 = add 0, 4
+    %305 = add 0, 0
+    %306 = add 0, 0
+    %307 = add 0, 7
+    %308 = add 0, 0
+    %309 = add 0, 0
+    %310 = add 0, 10
+    %311 = add 0, 11
+    %312 = add 0, 12
+    %313 = add 0, 0
+    %314 = add 0, 0
+    %315 = add 0, 0
+    @_2_0_0g = alloc [[i32, 3], 5]
+    %316 = add 0, 0
+    %317 = add 0, 0
+    %318 = getelemptr @_2_0_0g, %316
+    %319 = getelemptr %318, %317
+    store %301, %319
+    %320 = add 0, 1
+    %321 = add 0, 1
+    %322 = getelemptr @_2_0_0g, %320
+    %323 = getelemptr %322, %321
+    store %302, %323
+    %324 = add 0, 2
+    %325 = add 0, 2
+    %326 = getelemptr @_2_0_0g, %324
+    %327 = getelemptr %326, %325
+    store %303, %327
+    %328 = add 0, 3
+    %329 = add 0, 0
+    %330 = getelemptr @_2_0_0g, %328
+    %331 = getelemptr %330, %329
+    store %304, %331
+    %332 = add 0, 4
+    %333 = add 0, 1
+    %334 = getelemptr @_2_0_0g, %332
+    %335 = getelemptr %334, %333
+    store %305, %335
+    %336 = add 0, 0
+    %337 = add 0, 2
+    %338 = getelemptr @_2_0_0g, %336
+    %339 = getelemptr %338, %337
+    store %306, %339
+    %340 = add 0, 1
+    %341 = add 0, 0
+    %342 = getelemptr @_2_0_0g, %340
+    %343 = getelemptr %342, %341
+    store %307, %343
+    %344 = add 0, 2
+    %345 = add 0, 1
+    %346 = getelemptr @_2_0_0g, %344
+    %347 = getelemptr %346, %345
+    store %308, %347
+    %348 = add 0, 3
+    %349 = add 0, 2
+    %350 = getelemptr @_2_0_0g, %348
+    %351 = getelemptr %350, %349
+    store %309, %351
+    %352 = add 0, 4
+    %353 = add 0, 0
+    %354 = getelemptr @_2_0_0g, %352
+    %355 = getelemptr %354, %353
+    store %310, %355
+    %356 = add 0, 0
+    %357 = add 0, 1
+    %358 = getelemptr @_2_0_0g, %356
+    %359 = getelemptr %358, %357
+    store %311, %359
+    %360 = add 0, 1
+    %361 = add 0, 2
+    %362 = getelemptr @_2_0_0g, %360
+    %363 = getelemptr %362, %361
+    store %312, %363
+    %364 = add 0, 2
+    %365 = add 0, 0
+    %366 = getelemptr @_2_0_0g, %364
+    %367 = getelemptr %366, %365
+    store %313, %367
+    %368 = add 0, 3
+    %369 = add 0, 1
+    %370 = getelemptr @_2_0_0g, %368
+    %371 = getelemptr %370, %369
+    store %314, %371
+    %372 = add 0, 4
+    %373 = add 0, 2
+    %374 = getelemptr @_2_0_0g, %372
+    %375 = getelemptr %374, %373
+    store %315, %375
+    @_2_0_0h = alloc [i32, 3]
+
+    %376 = add 0, 1
+    %377 = add 0, 2
+    %378 = add 0, 3
+    %379 = add 0, 4
+    %380 = add 0, 5
+    %381 = add 0, 0
+    %382 = add 0, 0
+    %383 = add 0, 0
+    %384 = add 0, 0
+    %385 = add 0, 0
+    %386 = add 0, 0
+    %387 = add 0, 0
+    %388 = add 0, 0
+    %389 = add 0, 0
+    %390 = add 0, 0
+    %391 = add 0, 0
+    %392 = add 0, 0
+    %393 = add 0, 0
+    %394 = add 0, 0
+    %395 = add 0, 0
+    %396 = add 0, 0
+    %397 = add 0, 0
+    %398 = add 0, 0
+    %399 = add 0, 0
+    @_2_0_0i = alloc [[[i32, 4], 3], 2]
+    %400 = add 0, 0
+    %401 = add 0, 0
+    %402 = add 0, 0
+    %403 = getelemptr @_2_0_0i, %400
+    %404 = getelemptr %403, %401
+    %405 = getelemptr %404, %402
+    store %376, %405
+    %406 = add 0, 1
+    %407 = add 0, 1
+    %408 = add 0, 1
+    %409 = getelemptr @_2_0_0i, %406
+    %410 = getelemptr %409, %407
+    %411 = getelemptr %410, %408
+    store %377, %411
+    %412 = add 0, 0
+    %413 = add 0, 2
+    %414 = add 0, 2
+    %415 = getelemptr @_2_0_0i, %412
+    %416 = getelemptr %415, %413
+    %417 = getelemptr %416, %414
+    store %378, %417
+    %418 = add 0, 1
+    %419 = add 0, 0
+    %420 = add 0, 3
+    %421 = getelemptr @_2_0_0i, %418
+    %422 = getelemptr %421, %419
+    %423 = getelemptr %422, %420
+    store %379, %423
+    %424 = add 0, 0
+    %425 = add 0, 1
+    %426 = add 0, 0
+    %427 = getelemptr @_2_0_0i, %424
+    %428 = getelemptr %427, %425
+    %429 = getelemptr %428, %426
+    store %380, %429
+    %430 = add 0, 1
+    %431 = add 0, 2
+    %432 = add 0, 1
+    %433 = getelemptr @_2_0_0i, %430
+    %434 = getelemptr %433, %431
+    %435 = getelemptr %434, %432
+    store %381, %435
+    %436 = add 0, 0
+    %437 = add 0, 0
+    %438 = add 0, 2
+    %439 = getelemptr @_2_0_0i, %436
+    %440 = getelemptr %439, %437
+    %441 = getelemptr %440, %438
+    store %382, %441
+    %442 = add 0, 1
+    %443 = add 0, 1
+    %444 = add 0, 3
+    %445 = getelemptr @_2_0_0i, %442
+    %446 = getelemptr %445, %443
+    %447 = getelemptr %446, %444
+    store %383, %447
+    %448 = add 0, 0
+    %449 = add 0, 2
+    %450 = add 0, 0
+    %451 = getelemptr @_2_0_0i, %448
+    %452 = getelemptr %451, %449
+    %453 = getelemptr %452, %450
+    store %384, %453
+    %454 = add 0, 1
+    %455 = add 0, 0
+    %456 = add 0, 1
+    %457 = getelemptr @_2_0_0i, %454
+    %458 = getelemptr %457, %455
+    %459 = getelemptr %458, %456
+    store %385, %459
+    %460 = add 0, 0
+    %461 = add 0, 1
+    %462 = add 0, 2
+    %463 = getelemptr @_2_0_0i, %460
+    %464 = getelemptr %463, %461
+    %465 = getelemptr %464, %462
+    store %386, %465
+    %466 = add 0, 1
+    %467 = add 0, 2
+    %468 = add 0, 3
+    %469 = getelemptr @_2_0_0i, %466
+    %470 = getelemptr %469, %467
+    %471 = getelemptr %470, %468
+    store %387, %471
+    %472 = add 0, 0
+    %473 = add 0, 0
+    %474 = add 0, 0
+    %475 = getelemptr @_2_0_0i, %472
+    %476 = getelemptr %475, %473
+    %477 = getelemptr %476, %474
+    store %388, %477
+    %478 = add 0, 1
+    %479 = add 0, 1
+    %480 = add 0, 1
+    %481 = getelemptr @_2_0_0i, %478
+    %482 = getelemptr %481, %479
+    %483 = getelemptr %482, %480
+    store %389, %483
+    %484 = add 0, 0
+    %485 = add 0, 2
+    %486 = add 0, 2
+    %487 = getelemptr @_2_0_0i, %484
+    %488 = getelemptr %487, %485
+    %489 = getelemptr %488, %486
+    store %390, %489
+    %490 = add 0, 1
+    %491 = add 0, 0
+    %492 = add 0, 3
+    %493 = getelemptr @_2_0_0i, %490
+    %494 = getelemptr %493, %491
+    %495 = getelemptr %494, %492
+    store %391, %495
+    %496 = add 0, 0
+    %497 = add 0, 1
+    %498 = add 0, 0
+    %499 = getelemptr @_2_0_0i, %496
+    %500 = getelemptr %499, %497
+    %501 = getelemptr %500, %498
+    store %392, %501
+    %502 = add 0, 1
+    %503 = add 0, 2
+    %504 = add 0, 1
+    %505 = getelemptr @_2_0_0i, %502
+    %506 = getelemptr %505, %503
+    %507 = getelemptr %506, %504
+    store %393, %507
+    %508 = add 0, 0
+    %509 = add 0, 0
+    %510 = add 0, 2
+    %511 = getelemptr @_2_0_0i, %508
+    %512 = getelemptr %511, %509
+    %513 = getelemptr %512, %510
+    store %394, %513
+    %514 = add 0, 1
+    %515 = add 0, 1
+    %516 = add 0, 3
+    %517 = getelemptr @_2_0_0i, %514
+    %518 = getelemptr %517, %515
+    %519 = getelemptr %518, %516
+    store %395, %519
+    %520 = add 0, 0
+    %521 = add 0, 2
+    %522 = add 0, 0
+    %523 = getelemptr @_2_0_0i, %520
+    %524 = getelemptr %523, %521
+    %525 = getelemptr %524, %522
+    store %396, %525
+    %526 = add 0, 1
+    %527 = add 0, 0
+    %528 = add 0, 1
+    %529 = getelemptr @_2_0_0i, %526
+    %530 = getelemptr %529, %527
+    %531 = getelemptr %530, %528
+    store %397, %531
+    %532 = add 0, 0
+    %533 = add 0, 1
+    %534 = add 0, 2
+    %535 = getelemptr @_2_0_0i, %532
+    %536 = getelemptr %535, %533
+    %537 = getelemptr %536, %534
+    store %398, %537
+    %538 = add 0, 1
+    %539 = add 0, 2
+    %540 = add 0, 3
+    %541 = getelemptr @_2_0_0i, %538
+    %542 = getelemptr %541, %539
+    %543 = getelemptr %542, %540
+    store %399, %543
+
+    %544 = add 0, 4
+    ret %544
+
+}

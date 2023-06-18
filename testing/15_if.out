@@ -1,0 +1,113 @@
+fun  @main(): i32 {
+%entry: 
+    @_0_0_0_a = alloc i32
+    %1 = add 0, 10
+    store %1, @_0_0_0_a
+
+    %2 = load @_0_0_0_a
+    %3 = add 0, 1
+    %4 = gt %2, %3
+    br %4, %then_0, %else_0
+
+%then_0:
+        %5 = load @_0_0_0_a
+        %6 = add 0, 1
+        %7 = sub %5, %6
+        store %7, @_0_0_0_a
+
+        @_0_0_0_0_a = alloc i32
+        %8 = add 0, 5
+        store %8, @_0_0_0_0_a
+
+        %9 = load @_0_0_0_0_a
+        %10 = add 0, 1
+        %11 = sub 0, %10
+        %12 = lt %9, %11
+        br %12, %then_1, %else_1
+
+%then_1:
+            %13 = add 0, 10
+            ret %13
+
+
+%else_1:
+            @_0_0_0_0_1_a = alloc i32
+            %14 = add 0, 0
+            store %14, @_0_0_0_0_1_a
+
+            %15 = add 0, 98
+            store %15, @_0_0_0_0_1_a
+
+        jump %end_1
+
+%end_1:
+
+    jump %end_0
+
+%else_0:
+    jump %end_0
+
+%end_0:
+
+    %16 = load @_0_0_0_a
+    %17 = add 0, 9
+    %18 = eq %16, %17
+    br %18, %then_2, %else_2
+
+%then_2:
+        @_0_0_0_1_b = alloc i32
+        %19 = load @_0_0_0_a
+        %20 = add 0, 1
+        %21 = sub %19, %20
+        store %21, @_0_0_0_1_b
+
+        @_0_0_0_1_a = alloc i32
+        %22 = load @_0_0_0_1_b
+        %23 = add 0, 1
+        %24 = sub %22, %23
+        store %24, @_0_0_0_1_a
+
+        %25 = load @_0_0_0_1_a
+        %26 = load @_0_0_0_1_b
+        %27 = ne %25, %26
+        br %27, %then_3, %else_3
+
+%then_3:
+            %28 = load @_0_0_0_1_a
+            %29 = ne 0, %28
+            %30 = xor 1, %29
+            br %30, %then_4, %else_4
+
+%then_4:
+                %31 = add 0, 0
+                ret %31
+
+
+%else_4:
+            jump %end_4
+
+%end_4:
+
+            %32 = load @_0_0_0_1_a
+            ret %32
+
+
+%else_3:
+            %33 = load @_0_0_0_1_b
+            ret %33
+
+
+%end_3:
+
+    jump %end_2
+
+%else_2:
+    jump %end_2
+
+%end_2:
+
+    %34 = add 0, 1
+    %35 = sub 0, %34
+    ret %35
+
+}

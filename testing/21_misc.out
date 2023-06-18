@@ -1,0 +1,488 @@
+decl @getint(): i32
+decl @getch(): i32
+decl @getarray(*i32): i32
+decl @putint(i32)
+decl @putch(i32)
+decl @putarray(i32, *i32)
+decl @starttime()
+decl @stoptime()
+
+global @_0a0 = alloc i32, 0
+global @_0a1 = alloc i32, 0
+global @_0a2 = alloc i32, 0
+global @_0a3 = alloc i32, 0
+global @_0a4 = alloc i32, 0
+global @_0a5 = alloc i32, 0
+global @_0a6 = alloc i32, 0
+global @_0a7 = alloc i32, 0
+global @_0a8 = alloc i32, 0
+global @_0a9 = alloc i32, 0
+global @_0a10 = alloc i32, 0
+global @_0a11 = alloc i32, 0
+global @_0a12 = alloc i32, 0
+global @_0a13 = alloc i32, 0
+global @_0a14 = alloc i32, 0
+global @_0a15 = alloc i32, 0
+global @_0a16 = alloc i32, 0
+global @_0a17 = alloc i32, 0
+global @_0a18 = alloc i32, 0
+global @_0a19 = alloc i32, 0
+global @_0a20 = alloc i32, 0
+global @_0a21 = alloc i32, 0
+global @_0a22 = alloc i32, 0
+global @_0a23 = alloc i32, 0
+global @_0a24 = alloc i32, 0
+global @_0a25 = alloc i32, 0
+global @_0a26 = alloc i32, 0
+global @_0a27 = alloc i32, 0
+global @_0a28 = alloc i32, 0
+global @_0a29 = alloc i32, 0
+global @_0a30 = alloc i32, 0
+global @_0a31 = alloc i32, 0
+global @_0a32 = alloc i32, 0
+global @_0a33 = alloc i32, 0
+global @_0a34 = alloc i32, 0
+global @_0a35 = alloc i32, 0
+global @_0a36 = alloc i32, 0
+global @_0a37 = alloc i32, 0
+global @_0a38 = alloc i32, 0
+global @_0a39 = alloc i32, 0
+fun  @_0testParam8(%a0: i32, %a1: i32, %a2: i32, %a3: i32, %a4: i32, %a5: i32, %a6: i32, %a7: i32): i32 {
+%entry: 
+    @_1_0a0 = alloc i32
+    store %a0, @_1_0a0
+    @_1_0a1 = alloc i32
+    store %a1, @_1_0a1
+    @_1_0a2 = alloc i32
+    store %a2, @_1_0a2
+    @_1_0a3 = alloc i32
+    store %a3, @_1_0a3
+    @_1_0a4 = alloc i32
+    store %a4, @_1_0a4
+    @_1_0a5 = alloc i32
+    store %a5, @_1_0a5
+    @_1_0a6 = alloc i32
+    store %a6, @_1_0a6
+    @_1_0a7 = alloc i32
+    store %a7, @_1_0a7
+
+    %1 = load @_1_0a0
+    %2 = load @_1_0a1
+    %3 = load @_1_0a2
+    %4 = mul %2, %3
+    %5 = add %1, %4
+    %6 = load @_1_0a3
+    %7 = add %5, %6
+    %8 = load @_1_0a4
+    %9 = add %7, %8
+    %10 = load @_1_0a5
+    %11 = add %9, %10
+    %12 = load @_1_0a6
+    %13 = add %11, %12
+    %14 = load @_1_0a7
+    %15 = add %13, %14
+    ret %15
+
+}
+fun  @_0testParam16(%a0: i32, %a1: i32, %a2: i32, %a3: i32, %a4: i32, %a5: i32, %a6: i32, %a7: i32, %a8: i32, %a9: i32, %a10: i32, %a11: i32, %a12: i32, %a13: i32, %a14: i32, %a15: i32): i32 {
+%entry: 
+    @_1_1a0 = alloc i32
+    store %a0, @_1_1a0
+    @_1_1a1 = alloc i32
+    store %a1, @_1_1a1
+    @_1_1a2 = alloc i32
+    store %a2, @_1_1a2
+    @_1_1a3 = alloc i32
+    store %a3, @_1_1a3
+    @_1_1a4 = alloc i32
+    store %a4, @_1_1a4
+    @_1_1a5 = alloc i32
+    store %a5, @_1_1a5
+    @_1_1a6 = alloc i32
+    store %a6, @_1_1a6
+    @_1_1a7 = alloc i32
+    store %a7, @_1_1a7
+    @_1_1a8 = alloc i32
+    store %a8, @_1_1a8
+    @_1_1a9 = alloc i32
+    store %a9, @_1_1a9
+    @_1_1a10 = alloc i32
+    store %a10, @_1_1a10
+    @_1_1a11 = alloc i32
+    store %a11, @_1_1a11
+    @_1_1a12 = alloc i32
+    store %a12, @_1_1a12
+    @_1_1a13 = alloc i32
+    store %a13, @_1_1a13
+    @_1_1a14 = alloc i32
+    store %a14, @_1_1a14
+    @_1_1a15 = alloc i32
+    store %a15, @_1_1a15
+
+    %16 = load @_1_1a0
+    %17 = load @_1_1a1
+    %18 = add %16, %17
+    %19 = load @_1_1a2
+    %20 = add %18, %19
+    %21 = load @_1_1a3
+    %22 = sub %20, %21
+    %23 = load @_1_1a4
+    %24 = sub %22, %23
+    %25 = load @_1_1a5
+    %26 = sub %24, %25
+    %27 = load @_1_1a6
+    %28 = sub %26, %27
+    %29 = load @_1_1a7
+    %30 = sub %28, %29
+    %31 = load @_1_1a8
+    %32 = add %30, %31
+    %33 = load @_1_1a9
+    %34 = add %32, %33
+    %35 = load @_1_1a10
+    %36 = add %34, %35
+    %37 = load @_1_1a11
+    %38 = add %36, %37
+    %39 = load @_1_1a12
+    %40 = add %38, %39
+    %41 = load @_1_1a13
+    %42 = add %40, %41
+    %43 = load @_1_1a14
+    %44 = add %42, %43
+    %45 = load @_1_1a15
+    %46 = add %44, %45
+    ret %46
+
+}
+fun  @_0testParam32(%a0: i32, %a1: i32, %a2: i32, %a3: i32, %a4: i32, %a5: i32, %a6: i32, %a7: i32, %a8: i32, %a9: i32, %a10: i32, %a11: i32, %a12: i32, %a13: i32, %a14: i32, %a15: i32, %a16: i32, %a17: i32, %a18: i32, %a19: i32, %a20: i32, %a21: i32, %a22: i32, %a23: i32, %a24: i32, %a25: i32, %a26: i32, %a27: i32, %a28: i32, %a29: i32, %a30: i32, %a31: i32): i32 {
+%entry: 
+    @_1_2a0 = alloc i32
+    store %a0, @_1_2a0
+    @_1_2a1 = alloc i32
+    store %a1, @_1_2a1
+    @_1_2a2 = alloc i32
+    store %a2, @_1_2a2
+    @_1_2a3 = alloc i32
+    store %a3, @_1_2a3
+    @_1_2a4 = alloc i32
+    store %a4, @_1_2a4
+    @_1_2a5 = alloc i32
+    store %a5, @_1_2a5
+    @_1_2a6 = alloc i32
+    store %a6, @_1_2a6
+    @_1_2a7 = alloc i32
+    store %a7, @_1_2a7
+    @_1_2a8 = alloc i32
+    store %a8, @_1_2a8
+    @_1_2a9 = alloc i32
+    store %a9, @_1_2a9
+    @_1_2a10 = alloc i32
+    store %a10, @_1_2a10
+    @_1_2a11 = alloc i32
+    store %a11, @_1_2a11
+    @_1_2a12 = alloc i32
+    store %a12, @_1_2a12
+    @_1_2a13 = alloc i32
+    store %a13, @_1_2a13
+    @_1_2a14 = alloc i32
+    store %a14, @_1_2a14
+    @_1_2a15 = alloc i32
+    store %a15, @_1_2a15
+    @_1_2a16 = alloc i32
+    store %a16, @_1_2a16
+    @_1_2a17 = alloc i32
+    store %a17, @_1_2a17
+    @_1_2a18 = alloc i32
+    store %a18, @_1_2a18
+    @_1_2a19 = alloc i32
+    store %a19, @_1_2a19
+    @_1_2a20 = alloc i32
+    store %a20, @_1_2a20
+    @_1_2a21 = alloc i32
+    store %a21, @_1_2a21
+    @_1_2a22 = alloc i32
+    store %a22, @_1_2a22
+    @_1_2a23 = alloc i32
+    store %a23, @_1_2a23
+    @_1_2a24 = alloc i32
+    store %a24, @_1_2a24
+    @_1_2a25 = alloc i32
+    store %a25, @_1_2a25
+    @_1_2a26 = alloc i32
+    store %a26, @_1_2a26
+    @_1_2a27 = alloc i32
+    store %a27, @_1_2a27
+    @_1_2a28 = alloc i32
+    store %a28, @_1_2a28
+    @_1_2a29 = alloc i32
+    store %a29, @_1_2a29
+    @_1_2a30 = alloc i32
+    store %a30, @_1_2a30
+    @_1_2a31 = alloc i32
+    store %a31, @_1_2a31
+
+    %47 = load @_1_2a0
+    %48 = load @_1_2a1
+    %49 = add %47, %48
+    %50 = load @_1_2a2
+    %51 = sub %49, %50
+    %52 = load @_1_2a3
+    %53 = add %51, %52
+    %54 = load @_1_2a4
+    %55 = add %53, %54
+    %56 = load @_1_2a5
+    %57 = add %55, %56
+    %58 = load @_1_2a6
+    %59 = add %57, %58
+    %60 = load @_1_2a7
+    %61 = add %59, %60
+    %62 = load @_1_2a8
+    %63 = add %61, %62
+    %64 = load @_1_2a9
+    %65 = add %63, %64
+    %66 = load @_1_2a10
+    %67 = add %65, %66
+    %68 = load @_1_2a11
+    %69 = add %67, %68
+    %70 = load @_1_2a12
+    %71 = add %69, %70
+    %72 = load @_1_2a13
+    %73 = add %71, %72
+    %74 = load @_1_2a14
+    %75 = add %73, %74
+    %76 = load @_1_2a15
+    %77 = add %75, %76
+    %78 = load @_1_2a16
+    %79 = add %77, %78
+    %80 = load @_1_2a17
+    %81 = add %79, %80
+    %82 = load @_1_2a18
+    %83 = sub %81, %82
+    %84 = load @_1_2a19
+    %85 = sub %83, %84
+    %86 = load @_1_2a20
+    %87 = sub %85, %86
+    %88 = load @_1_2a21
+    %89 = sub %87, %88
+    %90 = load @_1_2a22
+    %91 = sub %89, %90
+    %92 = load @_1_2a23
+    %93 = add %91, %92
+    %94 = load @_1_2a24
+    %95 = add %93, %94
+    %96 = load @_1_2a25
+    %97 = add %95, %96
+    %98 = load @_1_2a26
+    %99 = add %97, %98
+    %100 = load @_1_2a27
+    %101 = add %99, %100
+    %102 = load @_1_2a28
+    %103 = add %101, %102
+    %104 = load @_1_2a29
+    %105 = add %103, %104
+    %106 = load @_1_2a30
+    %107 = add %105, %106
+    %108 = load @_1_2a31
+    %109 = add %107, %108
+    ret %109
+
+}
+fun  @main(): i32 {
+%entry: 
+    %110 = add 0, 0
+    store %110, @_0a0
+
+    %111 = add 0, 1
+    store %111, @_0a1
+
+    %112 = add 0, 2
+    store %112, @_0a2
+
+    %113 = add 0, 3
+    store %113, @_0a3
+
+    %114 = add 0, 4
+    store %114, @_0a4
+
+    %115 = add 0, 5
+    store %115, @_0a5
+
+    %116 = add 0, 6
+    store %116, @_0a6
+
+    %117 = add 0, 7
+    store %117, @_0a7
+
+    %118 = add 0, 8
+    store %118, @_0a8
+
+    %119 = add 0, 9
+    store %119, @_0a9
+
+    %120 = add 0, 0
+    store %120, @_0a10
+
+    %121 = add 0, 1
+    store %121, @_0a11
+
+    %122 = add 0, 2
+    store %122, @_0a12
+
+    %123 = add 0, 3
+    store %123, @_0a13
+
+    %124 = add 0, 4
+    store %124, @_0a14
+
+    %125 = add 0, 5
+    store %125, @_0a15
+
+    %126 = add 0, 6
+    store %126, @_0a16
+
+    %127 = add 0, 7
+    store %127, @_0a17
+
+    %128 = add 0, 8
+    store %128, @_0a18
+
+    %129 = add 0, 9
+    store %129, @_0a19
+
+    %130 = add 0, 0
+    store %130, @_0a20
+
+    %131 = add 0, 1
+    store %131, @_0a21
+
+    %132 = add 0, 2
+    store %132, @_0a22
+
+    %133 = add 0, 3
+    store %133, @_0a23
+
+    %134 = add 0, 4
+    store %134, @_0a24
+
+    %135 = add 0, 5
+    store %135, @_0a25
+
+    %136 = add 0, 6
+    store %136, @_0a26
+
+    %137 = add 0, 7
+    store %137, @_0a27
+
+    %138 = add 0, 8
+    store %138, @_0a28
+
+    %139 = add 0, 9
+    store %139, @_0a29
+
+    %140 = add 0, 0
+    store %140, @_0a30
+
+    %141 = add 0, 1
+    store %141, @_0a31
+
+    %142 = add 0, 4
+    store %142, @_0a32
+
+    %143 = add 0, 5
+    store %143, @_0a33
+
+    %144 = add 0, 6
+    store %144, @_0a34
+
+    %145 = add 0, 7
+    store %145, @_0a35
+
+    %146 = add 0, 8
+    store %146, @_0a36
+
+    %147 = add 0, 9
+    store %147, @_0a37
+
+    %148 = add 0, 0
+    store %148, @_0a38
+
+    %149 = add 0, 1
+    store %149, @_0a39
+
+    %150 = load @_0a0
+    %151 = load @_0a1
+    %152 = load @_0a2
+    %153 = load @_0a3
+    %154 = load @_0a4
+    %155 = load @_0a5
+    %156 = load @_0a6
+    %157 = load @_0a7
+    %158 = call @_0testParam8(%150, %151, %152, %153, %154, %155, %156, %157)
+    store %158, @_0a0
+
+    %159 = load @_0a0
+    call @putint(%159)
+
+    %160 = load @_0a32
+    %161 = load @_0a33
+    %162 = load @_0a34
+    %163 = load @_0a35
+    %164 = load @_0a36
+    %165 = load @_0a37
+    %166 = load @_0a38
+    %167 = load @_0a39
+    %168 = load @_0a8
+    %169 = load @_0a9
+    %170 = load @_0a10
+    %171 = load @_0a11
+    %172 = load @_0a12
+    %173 = load @_0a13
+    %174 = load @_0a14
+    %175 = load @_0a15
+    %176 = call @_0testParam16(%160, %161, %162, %163, %164, %165, %166, %167, %168, %169, %170, %171, %172, %173, %174, %175)
+    store %176, @_0a0
+
+    %177 = load @_0a0
+    call @putint(%177)
+
+    %178 = load @_0a0
+    %179 = load @_0a1
+    %180 = load @_0a2
+    %181 = load @_0a3
+    %182 = load @_0a4
+    %183 = load @_0a5
+    %184 = load @_0a6
+    %185 = load @_0a7
+    %186 = load @_0a8
+    %187 = load @_0a9
+    %188 = load @_0a10
+    %189 = load @_0a11
+    %190 = load @_0a12
+    %191 = load @_0a13
+    %192 = load @_0a14
+    %193 = load @_0a15
+    %194 = load @_0a16
+    %195 = load @_0a17
+    %196 = load @_0a18
+    %197 = load @_0a19
+    %198 = load @_0a20
+    %199 = load @_0a21
+    %200 = load @_0a22
+    %201 = load @_0a23
+    %202 = load @_0a24
+    %203 = load @_0a25
+    %204 = load @_0a26
+    %205 = load @_0a27
+    %206 = load @_0a28
+    %207 = load @_0a29
+    %208 = load @_0a30
+    %209 = load @_0a31
+    %210 = call @_0testParam32(%178, %179, %180, %181, %182, %183, %184, %185, %186, %187, %188, %189, %190, %191, %192, %193, %194, %195, %196, %197, %198, %199, %200, %201, %202, %203, %204, %205, %206, %207, %208, %209)
+    store %210, @_0a0
+
+    %211 = load @_0a0
+    call @putint(%211)
+
+    %212 = add 0, 0
+    ret %212
+
+}

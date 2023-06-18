@@ -1,0 +1,20 @@
+fun  @main(): i32 {
+%entry: 
+    @_0_0_0_a = alloc i32
+    %1 = add 0, 0
+    store %1, @_0_0_0_a
+
+    @_0_0_0_0_a = alloc i32
+    %2 = add 0, 0
+    store %2, @_0_0_0_0_a
+
+    @_0_0_0_0_0_a = alloc i32
+    %3 = add 0, 0
+    store %3, @_0_0_0_0_0_a
+
+
+
+    %4 = load @_0_0_0_a
+    ret %4
+
+}

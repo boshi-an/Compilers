@@ -1,0 +1,8 @@
+fun  @main(): i32 {
+%entry: 
+    @_0_x = add 0, 1
+
+    %1 = add 0, @_0_x
+    ret %1
+
+}

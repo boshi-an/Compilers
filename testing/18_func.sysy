@@ -1,0 +1,17 @@
+int f() {
+  return 0;
+}
+
+void g() {
+
+}
+
+int add(int a, int b) {
+  return a + b;
+}
+
+int main() {
+  g();
+  f();
+  return add(1, 2);
+}

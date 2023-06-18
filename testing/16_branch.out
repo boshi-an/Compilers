@@ -1,0 +1,40 @@
+fun  @main(): i32 {
+%entry: 
+    %1 = add 0, 1
+    br %1, %then_0, %else_0
+
+%then_0:
+        %2 = add 0, 2
+        br %2, %then_1, %else_1
+
+%then_1:
+            %3 = add 0, 3
+            br %3, %then_2, %else_2
+
+%then_2:
+                %4 = add 0, 1
+                ret %4
+
+%else_2:
+                %5 = add 0, 2
+                ret %5
+
+%end_2:
+        jump %end_1
+
+%else_1:
+        jump %end_1
+
+%end_1:
+    jump %end_0
+
+%else_0:
+    jump %end_0
+
+%end_0:
+
+    %6 = add 0, 0
+    ret %6
+
+
+}
